@@ -20,7 +20,7 @@ export default function Tasks({ tasks, onTaskClick, onTaskDelete }) {
           <li key={task.id} className="flex gap-2">
             <button
               onClick={() => onTaskClick(task.id)}
-              className={`bg-slate-400 p-2 rounded-md text-white hover:cursor-pointer flex w-full text-left ${
+              className={`bg-slate-400 p-2 rounded-md text-white hover:cursor-pointer flex w-full text-left items-center gap-2 ${
                 task.isCompleted && "line-through"
               }`}
             >
